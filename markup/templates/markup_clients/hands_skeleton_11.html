@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% block js_file %}
+
+    <script type="text/javascript" src="{{url_for('static', filename='JsCode.js')}}"></script>
+    <link rel="stylesheet" href="{{url_for('static', filename='hand_markup_style.css')}}">
+
+{% endblock %}
+
+
+{% block title %}
+    Markup hands skeleton 11 points
+{% endblock %}
+
+{% block content %}
+
+<div class="row">
+
+    <div class="col-6">
+
+        <canvas id="myCanvas" style="border:2px solid black"></canvas>
+
+    </div>
+
+    <div class="col-6" style="margin-top:20px">
+        <div class="container">
+            <div class="pervious_button">
+                <button id="previous_img" type="submit" class="btn btn-success">Previous</button>
+                <button id="next_img" type="submit" class="btn btn-success">Next</button>
+            </div>
+            <div class="send_button">
+                <button id="send_points_to_server" type="submit" class="btn btn-success">Send</button>
+            </div>
+            <div class="clean_button">
+                <button id="clean_all" type="submit" class="btn btn-success">Clean</button>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+{% endblock %}

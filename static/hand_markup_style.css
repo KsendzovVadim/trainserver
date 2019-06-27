@@ -1,0 +1,14 @@
+.send_button {
+	position: absolute;
+	top: 100px;
+}
+
+.pervious_button {
+	position: absolute;
+	top: 300px;
+}
+
+.clean_button {
+	position: absolute;
+	top: 450px;
+}

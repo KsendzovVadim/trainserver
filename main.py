@@ -1,10 +1,12 @@
 from app import app
-import app.view
-from app.app import db
-from app.posts.blueprint import posts
+import view
+from app import db
+from posts.blueprint import posts
+from markup.blueprint import hands_markup
 
 
 app.register_blueprint(posts, url_prefix='/blog')
+app.register_blueprint(hands_markup, url_prefix='/hands_markup')
 
 
 
