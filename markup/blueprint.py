@@ -62,7 +62,6 @@ def save_points_from_client():
 
     if request.method == 'POST':
 
-        # src_dict_from_request = request.form.to_dict()
         src_dict_from_request = request.form.to_dict()
 
         for src_keys in src_dict_from_request:
@@ -72,14 +71,8 @@ def save_points_from_client():
         img_name = src_keys_1['file_name']
         points = src_keys_1['points']
 
-    work_paths_list = create_work_list()
     save_points(points, img_name)
-    # count += 1
 
-    # _, rgb_img = read_bin_file(work_paths_list[count])
-    # converted_img = readed_bin_to_base64(rgb_img)
-
-    # return converted_img
     return 'TTTTTTTT'
 
 @hands_markup.route('/get_image', methods=['POST'])
